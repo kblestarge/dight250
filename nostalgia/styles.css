@@ -1,0 +1,82 @@
+/*Entire Page********************************/
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #D1E4D6;
+	margin: 1% 5%;
+	/* color: #1D401F; */
+}
+
+h1{
+	margin: 20px 0 0;
+	font-size: 3.8em;
+	color: #1D401F;
+	/* background-color: #1D401F; */
+}
+
+h2{
+	/* background-color: #07005A; */
+	margin: 0;
+	color: #2D7F42;
+	font-size: 2em;
+}
+
+h3{
+
+}
+
+nav{
+	background-color: #FFFFFF; 
+}
+
+nav a.selected{
+	color: green;
+	background-color: black;
+}
+
+nav a:hover{
+	color: yellow;
+}
+
+ul{
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+#home, #about, #whatev{
+	display: inline-block;
+	margin: 10px;
+}
+
+#home a, #about a, #whatev a{
+	color: #3CAD4F;
+}
+
+nav ul li a:hover{
+	color: black;
+}
+
+#main{
+	color: #1D401F;
+}
+
+
+/*About Page
+**************************/
+
+#kev-mug{
+    width: 50%;
+    margin-right: 10%;
+    float: right;
+    border-radius: 20px;
+}
+
+#main ul li{
+	
+margin: 10px 40px;
+	
+/* color: #1D401F; */
+}
