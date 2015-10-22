@@ -1,23 +1,69 @@
 /*Entire Page********************************/
 
+figure img{
+	width: 100%;
+}
+
+figure figcaption{
+	font-size: 2em;
+}
+
+figure{
+	
+width: 42%;
+	
+float: left;
+}
+
+.logo{
+	margin-top: 2%;
+	width: 100%;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {top:0px; right:0px;}
+    50%  {top:0px; right:5px;}
+    100% {top:0px; right:0px;}
+}
+/* Standard syntax */
+@keyframes example {
+    0%   {top:0px; right:0px;}
+    50%  {top:0px; right:5px;}
+    100% {top:0px; right:0px;}
+}
+
+.pokeball	{ 
+    width: 100px;
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: .5s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
 body{
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: #D1E4D6;
+	background-color: #2B74BA;
 	margin: 1% 5%;
-	/* color: #1D401F; */
+	color: #2B74BA;
 }
 
 h1{
-	margin: 20px 0 0;
-	font-size: 3.8em;
-	color: #1D401F;
+	margin: 0 2% 0 0;
+	font-size: 4.8em;
+	display: inline;
+	color: #FFCB05;
 	/* background-color: #1D401F; */
 }
 
 h2{
 	/* background-color: #07005A; */
-	margin: 0;
-	color: #2D7F42;
+	display: inline;
+	color: #FFFFFF;
+	margin-left: 2%;
 	font-size: 2em;
 }
 
@@ -26,16 +72,10 @@ h3{
 }
 
 nav{
-	background-color: #FFFFFF; 
-}
-
-nav a.selected{
-	color: green;
-	background-color: black;
-}
-
-nav a:hover{
-	color: yellow;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	margin-top: 1%;
+	border: 6px solid #EF4036;
 }
 
 ul{
@@ -46,37 +86,35 @@ a{
 	text-decoration: none;
 }
 
-#home, #about, #whatev{
+nav ul li{
 	display: inline-block;
 	margin: 10px;
 }
 
-#home a, #about a, #whatev a{
-	color: #3CAD4F;
+nav ul li a{
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	border: 3px solid #58585A;
+	border-radius: 35px;
+	background-color: #EF4036;
 }
 
 nav ul li a:hover{
-	color: black;
+	color: white;
+	background-color: #58585A;
+	border-color: #EF4036;
 }
 
 #main{
-	color: #1D401F;
+	color: white;
+}
+
+.pokeball{	
+width: 5%;
+margin: -1%;
 }
 
 
-/*About Page
+/*Show
 **************************/
-
-#kev-mug{
-    width: 50%;
-    margin-right: 10%;
-    float: right;
-    border-radius: 20px;
-}
-
-#main ul li{
-	
-margin: 10px 40px;
-	
-/* color: #1D401F; */
-}

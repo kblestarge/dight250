@@ -1,0 +1,71 @@
+@media screen and (max-width: 770px) {
+
+nav{
+
+width: 100%;
+
+padding-top: 4%;
+
+height: 6%;
+}
+
+li{
+	
+display: inline;
+	
+margin: 2% 2%;
+	
+height: 100%;
+}
+
+nav a{
+
+display: inline;
+
+height: 100%;
+
+/* padding-left: 13px; */
+
+/* padding-right: 13px; */
+
+font-size: 1.1em;
+}
+
+h1{
+
+margin-top: 60px;
+}
+
+h2{
+
+}
+
+h3{
+
+font-size: 1.2em;
+}
+
+#content img{
+
+max-width: 99%;
+}
+
+#contact{
+position: initial;            display: block;/* padding-top: 10px; */}
+
+#contact p{
+	
+text-align: center;
+	
+font-size: 23px;
+}
+
+#main{
+	margin: 0;
+}
+
+}
+
+/*@media screen and (max-width: 480px) {
+
+}*/

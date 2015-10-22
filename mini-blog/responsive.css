@@ -1,0 +1,147 @@
+@media screen and (max-width: 1000px) {
+  /********************************
+  Header
+  *********************************/
+  nav {
+
+  }
+  
+  h1 {
+  width: 90%;
+  }
+  
+  h2 {
+
+  }
+
+  .gif{
+    
+margin: 2% 1% 0 1%;
+  }
+
+  #p-home{
+
+width: 94%;
+
+}
+
+  h2 span{
+
+  }
+
+  #main-img{
+
+margin: 0;
+
+}
+
+  h3{
+
+margin: 0 !important;
+
+display: block !important;
+
+}
+
+  .row img{
+
+margin: 0;
+}
+
+.row p{
+  
+width: 90%;
+  
+padding: 5%;
+}
+
+.row div{
+  
+width: 100%;
+}
+
+  img{
+
+width: 100%;
+
+}
+
+  p{
+
+width: 90%;
+
+font-size: 30px;
+
+}
+
+ul{
+
+}
+  
+}
+
+@media screen and (max-width: 480px) {
+  /********************************
+  Two Column Layout
+  *********************************/
+  nav {
+
+  }
+
+  h3{
+
+margin: 0 !important;
+
+display: block !important;
+
+}
+
+  #p-home{
+
+font-size: 20px;
+
+width: 90%;
+}
+  
+ul{
+  
+}
+
+  h1 {
+  width: 100%;
+  font-size: 35px;
+  }
+  
+  .row img{
+
+margin: 0;
+}
+
+.row p{
+  
+width: 90%;
+  
+padding: 10px;
+}
+  
+  h2 {
+
+font-size: 20px;
+
+}
+
+  h2 span{
+
+  }
+
+  img{
+
+width: 100%;
+
+}
+
+  p{
+
+font-size: 19px;
+
+padding: 0;

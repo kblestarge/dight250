@@ -1,0 +1,28 @@
+@media screen and (max-width: 667px) {
+
+nav div{
+	height: 56px;
+}
+
+.culture{
+	width: 90%;
+	margin: 10px 5%;
+}
+
+h1{
+	font-size: 3em;
+}
+
+h2{
+	font-size: 2em;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+nav a{
+	font-size: 1em;
+}
+
+}

@@ -1,0 +1,62 @@
+@media screen and (max-width: 660px) {
+  /********************************
+  Header
+  *********************************/
+  nav {
+    /* background: none; */
+    /* float: right; */
+    /* font-size: 1.125em; */
+    /* margin-right: 5%; */
+    /* text-align: right; */
+    /* width: 45%; */
+  }
+  
+  h1 { font-size: 2.5em; }
+  
+  h2 {
+    font-size: 1.825em;
+    margin-bottom: 20px;
+  }
+  
+  header {
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /********************************
+  Two Column Layout
+  *********************************/
+  figure figcaption {
+    font-size: 1.3em;
+  }
+
+  figure {
+
+width: 80%;
+
+}
+
+.pokeball{
+  width: 10%;
+}
+  
+  nav{
+
+/* display: block; */
+
+/* float: none; */
+
+}
+
+  nav ul li{
+  }
+
+  nav ul li a{
+  display: block;
+  /* float: left; */
+  /* margin: 0 auto; */
+  font-size: 17px;
+  /* clear: both; */
+  }
+
+}
