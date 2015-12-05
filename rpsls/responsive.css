@@ -1,0 +1,39 @@
+@media screen and (min-width: 700px) {
+
+.img-contain{
+    height: 99%;
+    width: 19%;
+}
+
+header h1:first-of-type{
+    display: block;
+    font-size: 25px;
+}
+
+header h1:nth-of-type(2){
+    display: none;
+}
+
+#paper{
+    top: 0;
+    left: 20%;
+}
+
+#scissors{
+    top: 0;
+    left: 40%;
+}
+
+#lizard{
+    top: 0;
+    background-position: left;
+    left: 60%;
+}
+
+#spock{
+    top: 0;
+    background-position: center;
+    left: 80%;
+}
+
+}

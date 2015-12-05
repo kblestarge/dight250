@@ -1,0 +1,160 @@
+body{
+    font-family: sans-serif;
+}
+header{
+    /* padding: 10px 0 0 0; */
+    background-color: grey;
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+}
+
+header h1:first-of-type{
+    display: none;
+}
+
+h1{
+    text-align: center;
+    margin: 10px 0 0 0;
+    color: yellow;
+}
+h2{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
+    color: blue;
+}
+h3{
+    font-size: 1.5em;
+}
+#main{
+    position: absolute;
+    top: 100px;
+    height: 80%;
+    left: 0;
+    right: 0;
+    background: linear-gradient( to bottom, grey, black);
+}
+.img-contain{
+    height: 18%;
+    width: 99%;
+    display: block;
+    position: absolute;/* IE 9 *//* Safari */
+}
+.img-contain:hover{
+    transform: rotate(0deg) !important;
+    border: 5px solid darkgreen;
+}
+
+#rock{
+    background-image: url('img/rock.png');
+    background-size: cover;
+    background-position: center;
+    transform: rotate(2deg);
+}
+
+#paper{
+    background-image: url('img/paper.png');
+    background-size: cover;
+    background-position: center;
+    transform: rotate(-2deg);
+    top: 20%;
+}
+
+#scissors{
+    background-image: url('img/scissors.png');
+    background-size: cover;
+    background-position: center;
+    top: 40%;
+    transform: rotate(2deg);
+}
+
+#lizard{
+    background-image: url('img/lizard.png');
+    background-size: cover;
+    background-position: center;
+    transform: rotate(-2deg);
+    top: 60%;
+}
+
+#spock{
+    background-image: url('img/spock.png');
+    background-size: cover;
+    background-position: center -79px;
+    transform: rotate(2deg);
+    top: 80%;
+}
+
+#results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    cursor: pointer;
+}
+
+#results h1{
+    font-size: 30px;
+    /* margin: -50% 0 50% 0; */
+    position: absolute;
+    color: white;
+    opacity: 0.3;
+    top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+#results div{
+    text-align: center;
+    display: inline;
+}
+
+#results img{
+    width: 40%;
+}
+
+.tie{
+    animation-name: playerTie;
+    animation-duration: 1s;
+}
+
+/* The animation code */
+@keyframes playerTie {
+    0%   {
+        margin-right: 18%;
+    }
+    100% {
+        margin-right: 0;
+    }
+}
+
+.lose{
+    width: 1% !important;
+    opacity: 0;
+    animation-name: playerFight;
+    animation-duration: 1s;
+}
+
+/* The animation code */
+@keyframes playerFight {
+    0%   {
+        margin-right: 18%;
+        width: 40%;
+        opacity: 1;
+    }
+    50% {
+        margin-right: 0;
+        width: 40%;
+    }
+    100% {
+        width: 1%;
+        opacity: 0;
+    }
+}
