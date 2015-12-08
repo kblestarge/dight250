@@ -1,5 +1,48 @@
 var weapons = ['rock','paper','scissors','lizard','spock'];
 
+var body = document.querySelector('body');
+body.innerHTML = `
+	<header>
+		<h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+		<h1>RPSLP</h1>
+		<h2>Choose your weapon!</h2>
+		<div style="display:none;">
+			<p>Score</p>
+			<h3></h3>
+			<h3></h3>
+		</div>
+	</header>
+
+	<section id="main">
+
+		<button id="rock" class="img-contain">
+		</button>
+
+		<button id="paper" class="img-contain">
+		</button>
+
+		<button id="scissors" class="img-contain">
+		</button>
+
+		<button id="lizard" class="img-contain">
+		</button>
+
+		<button id="spock" class="img-contain">
+		</button>
+
+	</section>
+
+	<section id="results" style="display:none;">
+		<h1>results</h1>
+		<div>
+			<img src='#'>
+			<img src='#'>
+		</div>
+	</section>`;
+
+var playerPoints = 0;
+var computerPoints = 0;
+
 function Weapon (name, winnerAgainst) {
     this.name = name;
     this.winnerAgainst = winnerAgainst;
@@ -45,9 +88,11 @@ Weapon.prototype = {
 			player.setAttribute('class', 'tie');
 			resSlate.style.backgroundColor = '#585858';
 		}else if(result == 'lost'){
+			computerPoints ++;
 			player.setAttribute('class', 'lose');
 			resSlate.style.backgroundColor = '#7F0000';
 		}else{ //won
+			playerPoints ++;
 			playerOpponent.setAttribute('class', 'lose');
 			resSlate.style.backgroundColor = '#004000';
 		} 
@@ -79,4 +124,9 @@ res.onclick = function(){
 	player.setAttribute('class', '');
 	var playerOpponent = document.querySelector('#results img:nth-of-type(2)');
 	playerOpponent.setAttribute('class', '');
+	document.querySelector('header>div').style.display = 'block';
+	var player = document.querySelector('header h3:first-of-type');
+	player.innerText = 'You: ' + playerPoints;
+	var computer = document.querySelector('header h3:nth-of-type(2)');
+	computer.innerText = 'Computer: ' + computerPoints;
 };
