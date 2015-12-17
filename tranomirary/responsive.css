@@ -1,0 +1,63 @@
+@media screen and (max-width: 750px) {
+
+	nav{
+		display: block;
+	}
+
+	header div{
+		margin: 0 auto;
+		padding: 25px 0 0 0;
+	}
+
+	.carousel {
+    	width: 100%;
+	}
+
+	.flexers div{
+	width: 97%;
+	display: block;
+	}
+
+	.flexers img{
+	width: 100%;
+	display: block;
+	}
+
+	.flexers h3{
+	clear: both;
+	width: 100%;
+	display: block;
+	}
+	
+	#ohabolana{
+		height: 150px;
+	}
+
+	.profile img{
+	    width: 80%;
+	    float: none;
+	    margin: 20px 0 0 0;
+	}
+
+	.profile p{
+	    font-size: 20px;
+	}
+
+	.profile h3{
+	    font-size: 23px;
+	}
+
+	form{
+    	width: 90%;
+	}
+
+	form *{
+    	width: 95%;
+	}
+
+	#team{
+    width: 100%;
+}
+
+
+}

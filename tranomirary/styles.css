@@ -1,0 +1,328 @@
+body{
+    font-family: sans-serif;
+    background-color: #ECECEA;
+}
+
+header img{
+    float: left;
+    width: 142px;
+}
+
+header div{
+    padding: 25px 0 0 25px;
+    width: 310px;
+}
+
+header a{
+    overflow: hidden;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+header a:hover, header a:focus{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+header h1{
+    float: left;
+    color: white;
+    margin: 10px 0 0 0;
+    font-size: 53px;
+}
+
+header h2{
+    clear: both;
+    font-size: 20px;
+    margin: 0;
+    padding:  10px 0;
+}
+
+#head-banner{
+    background: url('img/oday/economy/5.jpg') no-repeat 10% -130px fixed;
+    width: 100%;
+    height: 200px;  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo{}
+
+nav{
+    width: 100%;
+    background-color: beige;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+nav div{
+    display: flex;
+    /* justify-content: center; */
+    height: 40px;
+    align-items: center;
+    /* width: 50px; */
+    flex: 1;
+}
+
+nav div:last-of-type{
+    flex:.5;
+}
+
+nav a{
+    height: 34px;
+    width: 100%;
+    padding-top: 6px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+nav div:first-child{
+    background-color: #142E45;
+}
+nav div:nth-child(2){
+    background-color: #0D507B;
+}
+nav div:nth-child(3){
+    background-color: #1888BA;
+}
+nav div:nth-child(4){
+    background-color: #80BE73;
+}
+
+nav a:hover, nav a:focus{
+    background-color: #3CA4FF;
+}
+
+#main>div p{
+    font-size: 20px;
+    padding: 0 5%;
+    text-align: left;
+}
+
+#ohabolana p{
+    padding: 5px 20px !important;
+    color: rgb(255, 255, 255);
+    text-align: center !important;
+    font-size: 40px !important;
+    align-self: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#ohabolana{
+    background: url('img/oday/signc.jpg') no-repeat center;
+    width: 100%;
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*------------------------------------*\
+    CAROUSEL
+\*------------------------------------*/
+.carousel{
+    overflow:hidden;
+    width: 90%;
+    margin: 0 auto;
+}
+.panes{
+    list-style:none;
+    position:relative;
+    width:500%;/* Number of panes * 100% */
+    padding: 0;
+    overflow:hidden;/* This is used solely to clear floats, it does not add functionality. */
+    -moz-animation:carousel 30s infinite;
+    -webkit-animation:carousel 30s infinite;
+    animation:carousel 30s infinite;
+}
+.panes > li{
+    position:relative;
+    float:left;
+    width:20%; /* 100 / number of panes */
+}
+.carousel img{
+    display:block;
+    width:100%;
+    border-radius: 10px;
+    max-width:100%;
+}
+.carousel h2{
+    font-size:1.3em;
+    padding:0.5em;
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    left:10px;
+    text-align:right;
+    color:#fff;
+    background-color:rgba(0,0,0,0.75);
+}
+
+@keyframes carousel{
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
+}
+
+.flexers{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexers div{
+    width: 90%;
+    display: flex;
+    /* border: 2px solid black; */
+    background-color: #1888BA;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.flexers img{
+    width: 80%;
+    height: 100%;
+    border-radius: 10px 0 0 5px;
+    float: left;
+}
+
+.flexers h3{
+    width: 20%;
+    align-self: center;
+    color: white;
+    float: left;
+    padding: 10px;
+}
+
+#team{
+    width: 83%;
+    margin: 20px auto;
+}
+
+#team img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile div{
+    width: 90%;
+    text-align: center;
+    /* border: 2px solid black; */
+    background-color: #8CBCD2;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.profile img{
+    width: 30%;
+    margin: 20px;
+    border-radius: 5px;
+    float: left;
+}
+
+.profile p{
+    color: #142E45;
+    padding: 10px;
+    font-size: 28px;
+    text-align: left;
+}
+
+.profile h3{
+    display: block;
+    padding: 0 5px;
+    font-size: 30px;
+    color: #ECECEA;
+}
+
+#main>h1{
+    text-align: center;
+    background-color: #D4D4D4;
+    color: #142E45;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 45px;
+}
+
+form{
+    width: 80%;
+    background-color: aliceblue;
+    padding: 5%;
+    margin: 20px auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form *{
+    display: block;
+    margin: 10px auto;
+    width: 400px;
+}
+
+form label{margin-bottom: -5px;font-size: 18px;}
+
+select, input, textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  resize: none;
+  border: 1px solid #DDDDDD;
+}
+
+textarea{
+    text-align: left;
+    height: 200px;
+    margin-top: 20px;
+}
+ 
+select:focus, input:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+form button{
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: #0D507B;
+}
+
+form button:hover, form button:focus{
+    background-color: #3CA4FF;
+}
+
+
+
